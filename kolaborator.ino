@@ -1,6 +1,6 @@
-int led=15;
+int led=5;
 int pb2=32;
-int buttonStatusSaya = 0; 
+int button = 0; 
 void setup(){
   pinMode(led,OUTPUT);
   pinMode(pb2,INPUT);
@@ -8,9 +8,9 @@ void setup(){
 
 void loop(){
   
-  buttonStatusSaya = digitalRead(pb2);
+  button = digitalRead(pb2);
   
-  if(buttonStatusSaya==HIGH){
+  if(button==HIGH){
     digitalWrite(led,HIGH);
   }else
   {
